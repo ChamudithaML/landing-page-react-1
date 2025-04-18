@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import useScrollDirection from '../CustomHooks/useScrollDirection';
+
+const scrollDirection = useScrollDirection();
 
 function SectionFive() {
     const agendaItems = [
@@ -47,7 +50,7 @@ function SectionFive() {
                         <motion.div
                             key={index}
                             initial={{ y: 40, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
+                            animate={scrollDirection === 'down' ? { y: 0, opacity: 1 } : {}}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: false, amount: 0.3 }}
                         >
