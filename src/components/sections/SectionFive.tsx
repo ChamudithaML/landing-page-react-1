@@ -49,13 +49,12 @@ function SectionFive() {
                             initial={{ y: 40, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true, amount: 0.3 }}
+                            viewport={{ once: false, amount: 0.3 }}
                         >
                             <div className="flex gap-6 items-start">
                                 <div className="w-24 text-right text-sm font-semibold text-gray-600">
                                     {item.time}
                                 </div>
-
                                 <div>
                                     <p className="text-lg font-semibold text-gray-800">{item.topic}</p>
                                     <p className="text-sm text-gray-700">{item.description}</p>
