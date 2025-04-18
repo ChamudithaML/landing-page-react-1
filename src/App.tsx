@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'; // Route, Routes
 import Navbar from './components/Layouts/Navbar';
 import SectionOne from './components/sections/SectionOne';
 import SectionTwo from './components/sections/SectionTwo';
+import SectionFour from './components/sections/SectionFour';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar></Navbar>
       <SectionOne></SectionOne>
       <SectionTwo></SectionTwo>
+      <SectionFour></SectionFour>
     </BrowserRouter>
   )
 }
