@@ -50,11 +50,14 @@ const Navbar = () => {
 
       {open && (
         <div className="md:hidden px-4 pb-4">
-          <a href="#midopt1" className="block py-2 text-gray-100 hover:text-purple-500">Event Overview</a>
-          <a href="#midopt2" className="block py-2 text-gray-100 hover:text-purple-500">Agenda</a>
-          <button className="w-full mt-2 bg-transparent text-white py-2 rounded-full border border-white hover:text-purple-500 transition">
+          <a href="#oview" className="block py-2 text-gray-100 hover:text-purple-500">Event Overview</a>
+          <a href="#agenda" className="block py-2 text-gray-100 hover:text-purple-500">Agenda</a>
+          <a
+            href="#register"
+            className="block mt-2 w-full text-center bg-transparent text-white py-2 rounded-full border border-white hover:text-purple-500 transition"
+          >
             Register Now
-          </button>
+          </a>
         </div>
       )}
     </nav>

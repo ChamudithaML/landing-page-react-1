@@ -1,5 +1,10 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
+import certi1 from '../../assets/awards/BPW-2024_2.png'
+import certi2 from '../../assets/awards/bestwork-03.png'
+import certi3 from '../../assets/awards/bestwork-04.png'
+import certi4 from '../../assets/awards/bestwork-01.png'
+
 function Footer() {
     return (
         <footer className="bg-gray-900 text-white px-6 py-12">
@@ -17,10 +22,10 @@ function Footer() {
                     <div>
                         <h4 className="text-lg font-semibold mb-2">Awards</h4>
                         <div className="flex gap-4">
-                            <img src="src/assets/awards/BPW-2024_2.png" alt="Award 4" className="w-18 h-18 object-contain" />
-                            <img src="src/assets/awards/bestwork-03.png" alt="Award 2" className="w-18 h-18 object-contain" />
-                            <img src="src/assets/awards/bestwork-04.png" alt="Award 3" className="w-18 h-18 object-contain" />
-                            <img src="src/assets/awards/bestwork-01.png" alt="Award 1" className="w-18 h-18 object-contain" />
+                            <img src={certi1} alt="Award 4" className="w-18 h-18 object-contain" />
+                            <img src={certi2} alt="Award 2" className="w-18 h-18 object-contain" />
+                            <img src={certi3} alt="Award 3" className="w-18 h-18 object-contain" />
+                            <img src={certi4} alt="Award 1" className="w-18 h-18 object-contain" />
                         </div>
                     </div>
                 </div>
