@@ -72,7 +72,7 @@ function SectionFive() {
     // }, [scrollDirection]);
 
     return (
-        <section className="w-full bg-gray-100 py-16 px-4">
+        <section id="agenda" className="w-full bg-gray-100 py-16 px-4">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
                 <div className="md:w-1/3">
                     <h2 className="text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-300 to-pink-400 leading-relaxed">

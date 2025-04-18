@@ -3,7 +3,7 @@ import SectionThree from './SectionThree';
 
 function SectionTwo() {
   return (
-    <section className="w-full bg-gray-900 py-16 px-4">
+    <section id="oview" className="w-full bg-gray-900 py-16 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8">
 
         <motion.div

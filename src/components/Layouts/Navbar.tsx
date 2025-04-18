@@ -16,8 +16,8 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex space-x-8">
-            <a href="#midopt1" className="text-gray-100 hover:text-blue-600">Event Overview</a>
-            <a href="#midopt2" className="text-gray-100 hover:text-blue-600">Agenda</a>
+            <a href="#oview" className="text-gray-100 hover:text-blue-600">Event Overview</a>
+            <a href="#agenda" className="text-gray-100 hover:text-blue-600">Agenda</a>
           </div>
 
           <div className="hidden md:flex">
