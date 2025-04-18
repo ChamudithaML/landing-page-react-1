@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 src/assets/images
+src/assets/icons
+src/assets/people
