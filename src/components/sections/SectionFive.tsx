@@ -94,6 +94,7 @@ function SectionFive() {
                                 : { duration: 0 }}
                             viewport={{ once: false, amount: 0.3 }}
                         >
+                            
                             <div className="flex gap-6 items-start">
                                 <div className="w-24 text-right text-sm font-semibold text-gray-600">
                                     {item.time}
@@ -103,12 +104,12 @@ function SectionFive() {
                                         </span>
                                     )}
                                 </div>
-                                <div>
-                                    <p className="text-lg font-semibold text-gray-800">{item.topic}</p>
-                                    <p className="text-sm text-gray-700">{item.description}</p>
+                                <div className="flex flex-col w-full">
+                                    <p className="text-lg font-semibold text-gray-800 break-words">{item.topic}</p>
+                                    <p className="text-sm text-gray-700 break-words overflow-hidden text-ellipsis">{item.description}</p>
                                 </div>
                             </div>
-
+                            
                             {index !== agendaItems.length - 1 && (
                                 <hr className="mt-4 border-purple-600" />
                             )}
