@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import useScrollDirection from '../CustomHooks/useScrollDirection';
 
-const scrollDirection = useScrollDirection();
-
 function SectionFive() {
+    const scrollDirection = useScrollDirection();
+
     const agendaItems = [
         {
             time: "09:30 AM",
@@ -37,6 +37,10 @@ function SectionFive() {
         }
     ];
 
+    // useEffect(() => {
+    //     console.log('Scroll Direction:', scrollDirection);
+    // }, [scrollDirection]);
+
     return (
         <section className="w-full bg-gray-100 py-16 px-4">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
@@ -45,13 +49,16 @@ function SectionFive() {
                 </div>
 
                 <div className="md:w-2/3 space-y-6">
-
                     {agendaItems.map((item, index) => (
                         <motion.div
                             key={index}
                             initial={{ y: 40, opacity: 0 }}
-                            animate={scrollDirection === 'down' ? { y: 0, opacity: 1 } : {}}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            whileInView={scrollDirection === 'down'
+                                ? { y: 0, opacity: 1 }
+                                : { y: 0, opacity: 1 }}
+                            transition={scrollDirection === 'down'
+                                ? { duration: 0.5, delay: index * 0.1 }
+                                : { duration: 0 }}
                             viewport={{ once: false, amount: 0.3 }}
                         >
                             <div className="flex gap-6 items-start">
@@ -69,7 +76,6 @@ function SectionFive() {
                             )}
                         </motion.div>
                     ))}
-
                 </div>
             </div>
         </section>
