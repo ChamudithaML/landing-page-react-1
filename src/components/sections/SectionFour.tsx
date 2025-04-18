@@ -78,19 +78,19 @@ const speakers = [
     },
   ];  
   
-
   function SectionFour() {
     return (
       <section className="w-full bg-gradient-to-r from-black to-gray-900 py-16 px-4 text-center">
         <h2 className="text-3xl md:text-4xl text-gray-100 mb-12">Our Speakers</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
           {speakers.map((speaker, index) => (
-            <CardItem
-              key={index}
-              image={speaker.image}
-              title={speaker.name}
-              description={speaker.description}
-            />
+            <div key={index} className="w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.33rem)] lg:w-[calc(25%-1.5rem)]">
+              <CardItem
+                image={speaker.image}
+                title={speaker.name}
+                description={speaker.description}
+              />
+            </div>
           ))}
         </div>
       </section>
