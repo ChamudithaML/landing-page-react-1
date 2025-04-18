@@ -17,9 +17,10 @@ function Footer() {
                     <div>
                         <h4 className="text-lg font-semibold mb-2">Awards</h4>
                         <div className="flex gap-4">
-                            <img src="/images/award1.png" alt="Award 1" className="w-12 h-12 object-contain" />
-                            <img src="/images/award2.png" alt="Award 2" className="w-12 h-12 object-contain" />
-                            <img src="/images/award3.png" alt="Award 3" className="w-12 h-12 object-contain" />
+                            <img src="src/assets/awards/BPW-2024_2.png" alt="Award 4" className="w-18 h-18 object-contain" />
+                            <img src="src/assets/awards/bestwork-03.png" alt="Award 2" className="w-18 h-18 object-contain" />
+                            <img src="src/assets/awards/bestwork-04.png" alt="Award 3" className="w-18 h-18 object-contain" />
+                            <img src="src/assets/awards/bestwork-01.png" alt="Award 1" className="w-18 h-18 object-contain" />
                         </div>
                     </div>
                 </div>

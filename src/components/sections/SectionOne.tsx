@@ -14,7 +14,7 @@ function SectionOne() {
         <img
           src={finastra}
           alt="Event Visual"
-          className="w-full max-w-md mx-auto"
+          className="w-64 mx-auto"
         />
 
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 leading-tight mb-4">
@@ -22,13 +22,13 @@ function SectionOne() {
           <span className="text-gray-100">Adapt. Evolve. Thrive.</span>
         </h1>
 
-        <p className="text-lg text-gray-500 mb-2">
+        <p className="text-base text-gray-500 mb-2">
           Date: <strong>9th April 2025</strong>
         </p>
-        <p className="text-lg text-gray-500 mb-2">
+        <p className="text-base text-gray-500 mb-2">
           Time: <strong>9:30 AM - 2:00 PM GMT+2</strong>
         </p>
-        <p className="text-lg text-gray-500 mb-6">
+        <p className="text-base text-gray-500 mb-6">
           <strong>The Nile Ritz-Carlton, Cairo, Egypt</strong>
         </p>
 
