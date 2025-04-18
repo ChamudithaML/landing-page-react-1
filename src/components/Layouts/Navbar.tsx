@@ -10,7 +10,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
 
           <div className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="h-8 w-auto" />
+            <a href="https://cogentsolutions.ae/" target="_blank" rel="noopener noreferrer">
+              <img src={logo} alt="Logo" className="h-12 w-auto" />
+            </a>
           </div>
 
           <div className="hidden md:flex space-x-8">
@@ -19,9 +21,12 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
+            <a
+              href="#register"
+              className="bg-transparent text-white px-4 py-2 rounded-full border border-white hover:text-purple-500 transition"
+            >
               Register Now
-            </button>
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -45,9 +50,9 @@ const Navbar = () => {
 
       {open && (
         <div className="md:hidden px-4 pb-4">
-          <a href="#midopt1" className="block py-2 text-gray-100 hover:text-blue-600">Event Overview</a>
-          <a href="#midopt2" className="block py-2 text-gray-100 hover:text-blue-600">Agenda</a>
-          <button className="w-full mt-2 bg-blue-600 text-white py-2 rounded-full hover:bg-blue-700 transition">
+          <a href="#midopt1" className="block py-2 text-gray-100 hover:text-purple-500">Event Overview</a>
+          <a href="#midopt2" className="block py-2 text-gray-100 hover:text-purple-500">Agenda</a>
+          <button className="w-full mt-2 bg-transparent text-white py-2 rounded-full border border-white hover:text-purple-500 transition">
             Register Now
           </button>
         </div>

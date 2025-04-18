@@ -97,6 +97,11 @@ function SectionFive() {
                             <div className="flex gap-6 items-start">
                                 <div className="w-24 text-right text-sm font-semibold text-gray-600">
                                     {item.time}
+                                    {item.time === "09:30 AM" && (
+                                        <span className="inline-block mt-2 px-2 py-1 text-xs font-semibold text-blue-100 bg-blue-600 rounded-full">
+                                            Registration
+                                        </span>
+                                    )}
                                 </div>
                                 <div>
                                     <p className="text-lg font-semibold text-gray-800">{item.topic}</p>

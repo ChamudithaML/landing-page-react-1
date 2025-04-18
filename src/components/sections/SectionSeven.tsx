@@ -1,6 +1,6 @@
 function SectionSeven() {
     return (
-        <section className="w-full bg-gradient-to-br from-[#9d174d] via-[#d946ef] to-[#f0abfc] py-20 px-4">
+        <section id="register" className="w-full bg-gradient-to-br from-[#9d174d] via-[#d946ef] to-[#f0abfc] py-20 px-4">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
                 
                 <div className="md:w-1/2 flex items-center justify-center text-center">
